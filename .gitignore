@@ -1,1 +1,11 @@
+# WordPress
 wp-content/uploads/
+wp-content/upgrade/
+wp-content/backups/
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
