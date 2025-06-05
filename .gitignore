@@ -1,11 +1,52 @@
+# ----------------------------------------------------------------
 # WordPress
-wp-content/uploads/
-wp-content/upgrade/
-wp-content/backups/
+# ----------------------------------------------------------------
+# Ignore the core WordPress installation. In a Docker setup, this is managed
+# by the image, but this is a good safeguard for other environments.
+/wp-admin/
+/wp-includes/
+/wp-login.php
+/wp-cron.php
+/xmlrpc.php
 
-# Node
-node_modules/
+# Ignore the sensitive config file. CRITICAL.
+/wp-config.php
 
-# OS files
+# Ignore user-generated content and transient files.
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backups/
+/wp-content/cache/
+
+# Ignore WordPress debug logs.
+/wp-content/debug.log
+
+# ----------------------------------------------------------------
+# Dependencies & Build Artifacts
+# ----------------------------------------------------------------
+# PHP dependencies managed by Composer.
+/vendor/
+
+# Node.js dependencies.
+/node_modules/
+
+# Log files.
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# ----------------------------------------------------------------
+# OS & Editor Files
+# ----------------------------------------------------------------
+# OS-generated files.
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# IDE / Code Editor settings.
+/.vscode/
