@@ -3,32 +3,32 @@
 # ----------------------------------------------------------------
 # Ignore the core WordPress installation. In a Docker setup, this is managed
 # by the image, but this is a good safeguard for other environments.
-/wp-admin/
-/wp-includes/
-/wp-login.php
-/wp-cron.php
-/xmlrpc.php
+apps/wordpress/wp-admin/
+apps/wordpress/wp-includes/
+apps/wordpress/wp-login.php
+apps/wordpress/wp-cron.php
+apps/wordpress/xmlrpc.php
 
 # Ignore the sensitive config file. CRITICAL.
-/wp-config.php
+apps/wordpress/wp-config.php
 
 # Ignore user-generated content and transient files.
-/wp-content/uploads/
-/wp-content/upgrade/
-/wp-content/backups/
-/wp-content/cache/
+apps/wordpress/wp-content/uploads/
+apps/wordpress/wp-content/upgrade/
+apps/wordpress/wp-content/backups/
+apps/wordpress/wp-content/cache/
 
 # Ignore WordPress debug logs.
-/wp-content/debug.log
+apps/wordpress/wp-content/debug.log
 
 # ----------------------------------------------------------------
 # Dependencies & Build Artifacts
 # ----------------------------------------------------------------
-# PHP dependencies managed by Composer.
-/vendor/
+# PHP dependencies managed by Composer (specific to WordPress app).
+apps/wordpress/vendor/
 
 # Node.js dependencies.
-/node_modules/
+node_modules/
 
 # Log files.
 *.log

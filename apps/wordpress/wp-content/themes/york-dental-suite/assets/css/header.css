@@ -1,0 +1,127 @@
+/* ==========================================================================
+    Rich Header Styles (The top bar with logos, CTA, contact)
+   ========================================================================== */
+.site-header.rich-header .header-top-bar {
+  background-color: var(--primary-dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* color: var(--header-light-text); */
+  padding: 10px 100px;
+  /* Inner container for alignment */
+}
+
+.site-header.rich-header .header-top-bar .container {
+  /* If you have a container inside header-top-bar */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between columns */
+  height: fit-content;
+}
+
+.rich-header .header-column {
+  /* If using flex-grow/shrink/basis for columns, define here */
+  /* For example, to give more space to the central logo: */
+  /* flex-shrink: 0; */
+}
+
+/* Column 1: Invisalign Logo Area */
+.rich-header .invisalign-logo-area {
+  /* flex-basis: 20%; Example: Adjust width */
+  /* text-align: left; */
+}
+.rich-header .invisalign-logo-area img.invisalign-logo {
+  /* max-height: 50px; TODO: Adjust based on your logo and Figma design */
+  /* width: auto; */
+  display: block; /* Removes extra space below image */
+}
+
+/* Column 2: Main Ornate Site Branding */
+.rich-header .site-branding-ornate {
+  /* flex-basis: 30%; Example: Adjust width */
+  /* text-align: center; */
+}
+.rich-header .site-branding-ornate .custom-logo-link img.custom-logo {
+  /* max-height: 90px; TODO: Adjust based on your logo and Figma design */
+  /* width: auto; */
+  /* display: inline-block; */
+}
+.rich-header .site-branding-ornate .site-title-fallback a {
+  /* color: var(--header-light-text); */
+  /* text-decoration: none; */
+  /* font-size: 28px; TODO: Adjust */
+  /* font-family: var(--font-primary); */
+}
+
+/* Column 3/4: Right Area */
+.rich-header .right-area {
+  display: flex;
+  position: relative;
+}
+
+/* Column 3: Book Now Button Area */
+.rich-header .book-now-area {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: -50%;
+}
+
+.rich-header .book-now-button {
+}
+
+.rich-header .book-now-button:hover {
+  /* background-color: #c79077; TODO: Darker shade for hover */
+}
+
+/* Column 4: Contact Info Area */
+.rich-header .contact-info-area {
+  /* flex-basis: 30%; Example: Adjust width */
+  /* text-align: right; */
+  /* display: flex; */
+  /* flex-direction: column; Stack phone and email */
+  /* align-items: flex-end; Align to the right */
+  /* gap: 5px; Space between phone and email lines */
+}
+.rich-header .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+.rich-header .contact-item .contact-icon {
+  /* margin-right: 8px; */
+  /* TODO: Add styles for your icons (SVG/FontIcon). Size them appropriately. */
+  /* Example: */
+  /* width: 16px; */
+  /* height: 16px; */
+  /* fill: var(--header-light-text); */ /* For SVG */
+}
+
+.rich-header .contact-item .item-spacer {
+  height: 22px;
+  border: 1px solid var(--primary-mid-pink);
+}
+
+.rich-header .contact-item a {
+  color: var(--header-light-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.rich-header .contact-item a:hover {
+  text-decoration: underline;
+  /* color: var(--link-hover-color); */
+}
+
+.rich-header .contact-item .contact-icon svg {
+  color: var(--primary-mid-pink);
+  height: 18px;
+  width: 18px;
+}

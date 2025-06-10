@@ -1,0 +1,68 @@
+/*
+Theme Name: The York Dental Suite
+Author: William Okou
+Description: A custom WordPress theme for The York Dental Suite, based on the provided Figma design.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: york-dental-suite
+*/
+
+/* ==========================================================================
+    Global Variables (Optional, but recommended for consistency)
+   ========================================================================== */
+:root {
+  --primary-dark-bg: #3c3c3b; /* Example: Dark color from your image */
+  --primary-light-text: #ffffff;
+  --header-light-text: #ffffff;
+  --button-primary-bg: linear-gradient(to bottom, #e3a68a, #b37a5f);
+  --button-primary-text: #ffffff;
+  --primary-mid-pink: #d89d81;
+  --link-hover-color: #d9a38b;
+  --site-container-padding: 0 0;
+  --font-primary: "Jost", sans-serif;
+  /* --font-secondary: 'YourBodyFont', sans-serif; */
+}
+
+/* ==========================================================================
+   Base Typography & Body Styles
+   ========================================================================== */
+body {
+  font-family: var(--font-primary);
+  font-size: 16px; /* Example base font size */
+  line-height: 1.6; /* Example base line height */
+  color: #333; /* Example base text color */
+}
+
+button,
+input[type="submit"],
+
+/* ==========================================================================
+General Site Styles
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--site-container-padding);
+  box-sizing: border-box;
+}
+
+.button {
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  width: content-fit;
+  height: content-fit;
+  padding: 15px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 44px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
