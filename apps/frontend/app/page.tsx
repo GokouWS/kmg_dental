@@ -40,12 +40,12 @@ export default function HomePage() {
   }
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col max-w-[1440px]">
       <Header data={data.acf} />
-      <SectionHero />
-      <SectionOne />
+      <SectionHero data={data.acf} />
+      <SectionOne data={data.acf} />
       <SectionForm />
-      <Footer />
+      <Footer data={data.acf} />
     </main>
   );
 }
