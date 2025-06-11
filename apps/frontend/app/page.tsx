@@ -41,7 +41,7 @@ export default function HomePage() {
 
   return (
     <main className="flex flex-col">
-      <Header />
+      <Header data={data.acf} />
       <SectionHero />
       <SectionOne />
       <SectionForm />
