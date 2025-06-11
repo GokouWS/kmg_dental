@@ -66,7 +66,10 @@ export interface HomepageAcfData {
   header_logo: AcfImage;
   header_button_text: string;
   header_icon_phone: AcfImage;
-  header_icon_phone_copy: AcfImage; // TODO: rename this field in ACF to 'header_icon_email'
+  header_icon_email: AcfImage;
+
+  // Hero Image
+  hero_background_image: AcfImage;
 
   // Hero Badges
   hero_badge_icon_left: AcfImage;
@@ -91,6 +94,7 @@ export interface HomepageAcfData {
   hero_google_review_rating: string;
 
   // Section One
+  section_one_image: AcfImage;
   section_one_author: string;
   section_one_header: string;
   section_one_paragraph_one: string;
