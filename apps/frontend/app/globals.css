@@ -4,6 +4,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary-dark-grey: #3c3c3b;
+  --primary-mid-pink: #d89d81;
+  --gradient-pink: linear-gradient(90deg, #e3a68a, #b37a5f);
 }
 
 @theme inline {
@@ -11,6 +13,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary-dark-grey: var(--primary-dark-grey);
+  --color-primary-mid-pink: var(--primary-mid-pink);
+  --color-gradient-pink: var(--gradient-pink);
 }
 
 @media (prefers-color-scheme: dark) {
