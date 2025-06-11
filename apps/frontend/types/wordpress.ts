@@ -63,6 +63,7 @@ export interface HomepageAcfData {
   email_address: string;
   cta_button_one_text: string;
   cta_button_two_text: string;
+  header_image_left: AcfImage;
   header_logo: AcfImage;
   header_button_text: string;
   header_icon_phone: AcfImage;
@@ -99,6 +100,16 @@ export interface HomepageAcfData {
   section_one_header: string;
   section_one_paragraph_one: string;
   section_one_paragraph_two: string;
+
+  // Footer
+  footer_image_one: AcfImage;
+  footer_image_two: AcfImage;
+  footer_image_three: AcfImage;
+  footer_copyright: string;
+  footer_privacy_policy: string;
+  footer_social_one: string;
+  footer_social_two: string;
+  footer_social_three: string;
 }
 
 // This represents the entire object returned for a page from the WP REST API
