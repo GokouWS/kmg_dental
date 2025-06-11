@@ -1,6 +1,14 @@
 import type {Metadata} from "next";
+import {Jost} from "next/font/google";
 import Providers from "./providers";
 import "./globals.css";
+
+const jost = Jost({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-jost",
+});
 
 export const metadata: Metadata = {
   title: "York Dental Suite",
@@ -13,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${jost.variable} font-main`}>
       <body>
         <Providers>{children}</Providers>
       </body>

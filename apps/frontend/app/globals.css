@@ -6,16 +6,40 @@
   --primary-dark-grey: #3c3c3b;
   --primary-mid-pink: #d89d81;
   --gradient-pink: linear-gradient(90deg, #e3a68a, #b37a5f);
+  --overlay-dark: #3c3c3b33;
+  --padding-section-x: 7vw;
+  --height-section: 51vw;
+  --width-container: 86vw;
+  --max-height-form: 161px;
+  --max-height-header: 140px;
+  --max-height-section: 740px;
+  --max-width-container: 1240px;
+  --max-width-section: 1440px;
+  --radius-button: 44px;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist-sans);
+  --font-main: var(--font-jost);
+  --color-overlay-dark: var(--overlay-dark);
   --color-primary-dark-grey: var(--primary-dark-grey);
+  --color-primary-mid-dark-grey: #545442;
   --color-primary-mid-pink: var(--primary-mid-pink);
+  --color-pink-light: #e3a68a;
+  --color-pink-dark: #b37a5f;
   --color-gradient-pink: var(--gradient-pink);
+  --height-form-max: var(--max-height-form);
+  --height-header-max: var(--max-height-header);
+  --height-section: var(--height-section);
+  --height-section-max: var(--max-height-section);
+  --width-section-max: var(--max-width-section);
+  --width-container: var(--width-container);
+  --width-container-max: var(--max-width-container);
+  --padding-section-x: var(--padding-section-x);
+  --radius-button: 44px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +53,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
 }
